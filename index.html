@@ -1,20 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBox Example</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Flexbox</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" />
-</head>
-<body>
-    <nav>
-        <ul class="navigation">
-          <li><a class="flex-item item-1" href="example-1.html">3 Columns layout</a></li>
-          <li><a class="flex-item item-2" href="example-2.html">Modal window</a></li>
-          <li><a class="flex-item item-3" href="example-3.html">Media object</a></li>
-          <li><a class="flex-item item-5" href="example-4.html">Navigation sidebar</a></li>
-        </ul>
-    </nav>
-</body>
+    <link rel="stylesheet" href="styles/layout.css" />
+  </head>
+  <body>
+      <div class="wrapper">
+          <div class="content">
+
+            <div class="hi">
+              <div class="container">
+                <div class="hi__row">
+                  <div class="hi__body">
+                    <div class="hi__title">Привет, Друг!</div>
+                    <ul class="hi__list">
+                      <li>У тебя все получится;</li>
+                      <li>Никогда не сдавайся;</li>
+                      <li>Сегодня ты знаешь больше, чем вчера;</li>
+                      <li>Спасибо тебе за поддержку.</li>
+                    </ul>
+                  </div>
+                  <div class="hi__image"><img src="https://placehold.co/469x214" alt="" title="" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="what">
+              <div class="container">
+                <div class="what__row">
+                  <div class="what__image">
+                    <img src="https://placehold.co/430x186" alt="" title="" />
+                  </div>
+                  <div class="what__body">
+                    <div class="what__title title">Что такое Flexbox?</div>
+                    <div class="what__text">
+                      <p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений flex-контейнера</p>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non hic maiores nihil soluta nostrum facere suscipit atque, consectetur totam fugiat molestiae alias natus amet enim quas, asperiores perspiciatis temporibus. Nemo!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="container">
+                <div class="columns__title title">Колонки с flex-контейнерами</div>
+                
+                <div class="columns__row">
+                  <div class="columns__column">
+                    <div class="columns__item item">
+                      <div class="item__row">
+                        <div class="item__image">
+                          <img src="https://placehold.co/200x150" alt="" title="" />
+                        </div>
+                        <div class="item__body">
+                          <div class="item__title">The description of the image</div>
+                          <div class="item__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut sequi. Sunt doloribus quisquam ratione deserunt perferendis maiores explicabo consequuntur veritatis cumque illum? Nesciunt nihil impedit aperiam dicta, soluta ipsa.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="columns__column">
+                    <div class="columns__item item">
+                      <div class="item__row">
+                        <div class="item__image">
+                          <img src="https://placehold.co/200x150" alt="" title="" />
+                        </div>
+                        <div class="item__body">
+                          <div class="item__title">The description of the image</div>
+                          <div class="item__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut sequi. Sunt doloribus quisquam ratione deserunt perferendis maiores explicabo consequuntur veritatis cumque illum? Nesciunt nihil impedit aperiam dicta, soluta ipsa.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="columns__column">
+                    <div class="columns__item item">
+                      <div class="item__row">
+                        <div class="item__image">
+                          <img src="https://placehold.co/200x150" alt="" title="" />
+                        </div>
+                        <div class="item__body">
+                          <div class="item__title">The description of the image</div>
+                          <div class="item__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut sequi. Sunt doloribus quisquam ratione deserunt perferendis maiores explicabo consequuntur veritatis cumque illum? Nesciunt nihil impedit aperiam dicta, soluta ipsa.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="columns__column">
+                    <div class="columns__item item">
+                      <div class="item__row">
+                        <div class="item__image">
+                          <img src="https://placehold.co/200x150" alt="" title="" />
+                        </div>
+                        <div class="item__body">
+                          <div class="item__title">The description of the image</div>
+                          <div class="item__text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut sequi. Sunt doloribus quisquam ratione deserunt perferendis maiores explicabo consequuntur veritatis cumque illum? Nesciunt nihil impedit aperiam dicta, soluta ipsa.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+
+              </div>
+            </div>
+
+            <div class="vertical">
+              <div class="container">
+                <div class="vertical__title title">Вертикальное выравнивание</div>
+                <div class="vertical__body">
+                  <div class="vertical__row">
+                    
+                    <div class="vertical__column">
+                      <div class="vertical__item">
+                        <div class="vertical__subtitle">Буду рад</div>
+                        <div class="vertical__label">подписке</div>
+                        <div class="vertical__text">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod fugiat officia velit quaerat voluptate voluptates numquam soluta nesciunt optio? Suscipit aliquam officiis quo ex dolore reprehenderit? Corporis, eius deleniti.</p>
+                        </div>
+                        <a href="#" class="vertical__btn">подписаться</a>
+                      </div>
+                    </div>
+
+                    <div class="vertical__column">
+                      <div class="vertical__item">
+                        <div class="vertical__subtitle">Буду рад</div>
+                        <div class="vertical__label">лайку</div>
+                        <div class="vertical__text">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod fugiat officia velit quaerat voluptate voluptates numquam soluta nesciunt optio? Suscipit aliquam officiis quo ex dolore reprehenderit? Corporis, eius deleniti.</p>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod fugiat officia velit quaerat voluptate voluptates numquam soluta nesciunt optio? Suscipit aliquam officiis quo ex dolore reprehenderit? Corporis, eius deleniti.</p>
+                        </div>
+                        <a href="#" class="vertical__btn">лайк</a>
+                      </div>
+                    </div>
+                    
+                    <div class="vertical__column">
+                      <div class="vertical__item">
+                        <div class="vertical__subtitle">Буду рад</div>
+                        <div class="vertical__label">комментарию</div>
+                        <div class="vertical__text">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod fugiat officia velit quaerat voluptate voluptates numquam soluta nesciunt optio? Suscipit aliquam officiis quo ex dolore reprehenderit? Corporis, eius deleniti.</p>
+                        </div>
+                        <a href="#" class="vertical__btn">комментировать</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer__row">
+                <div class="footer__text">Копирайт (с) 2022</div>
+              </div>
+            </div>
+          </footer>
+      </div>
+  </body>
 </html>
