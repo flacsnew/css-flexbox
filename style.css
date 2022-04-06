@@ -49,19 +49,17 @@
     background: linear-gradient(45deg, #e1eec3, #f05053);
   }
 
-  /* Custom */
-  .flex-container {
+/* Custom */
+.flex-container {
     display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-  }
+    flex-wrap: wrap;
+    height: 100vh;
+    /* flex-direction: column; */
+    /* padding: 5px; */
+    gap: 15px;
+}
   
-  .flex-item {
-    flex: 1;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+.flex-item {
+    width: calc(33.33% - 10px);
+    /* margin: 5px; */
+}
